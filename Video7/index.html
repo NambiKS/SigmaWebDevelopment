@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input elements</title>
+</head>
+<body>
+    <form action="./server.php" method="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        
+        <div>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+        
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="textarea">Enter your comments</label>
+            <textarea name="comment" id="textarea" cols="30" rows="3"></textarea>
+        </div>
+        
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+
+    </form>
+</body>
+</html>
