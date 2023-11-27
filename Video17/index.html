@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child selecor */
+        div > p {
+            background-color: pink;
+        }
+
+        /* Decendent selector */
+        div p{
+            color: yellow;
+        }
+
+        /* psuedo selector */
+
+        a:visited{
+            background-color: violet;
+        }
+
+        a:active{
+            background-color: pink;
+        }
+
+        a:hover{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am red div
+        <article>
+            <p>I am decendent p - blue</p>
+        </article>
+    </div>
+    <div id="green">
+        I am green div
+        <p>I am child p - pink</p>
+    </div>
+    <a href="https://google.com">Go to Google</a>
+    <a href="https://facebook.com">Go to Facebook</a>
+</body>
+</html>
