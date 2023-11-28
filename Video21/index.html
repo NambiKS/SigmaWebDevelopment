@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade algorithm</title>
+    <style>
+        /* Speciicity count is 10 */
+        .red{
+            color: red;
+        }
+        /* Speciicity count is 10 */
+        .yellow{
+            color: yellow;
+            background-color: blue;
+        }
+        /* Speciicity count is 1 */
+        p{
+            color: blue;
+        }
+        /* Speciicity count is 1 + 10 = 11 */
+        p.red{
+            color: green;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Speciicity</h1>
+    <div>
+        <h2>!Importance (10000) > Inline (1000) > ID (100) > Class or Pseudo element (10) > Element (1)</h2>
+        <p class="red yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nobis provident distinctio recusandae sapiente fuga! Quo beatae, labore voluptatibus minus illo accusantium sequi.</p>
+    </div>
+</body>
+</html>
