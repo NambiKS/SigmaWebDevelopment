@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+            /* it means if box is the first child of the parent then this style would apply */
+        }
+        /* .box::first-letter{
+            color:orange;
+            font-size: 35px;
+        }
+        .box::first-line{
+            background-color: blue;
+            color: yellow;
+        }
+        .boxes *{
+            color: pink;
+        } */
+
+        [data-color="primary"] {
+            color: blue;
+        }
+
+        .box:nth-child(odd){
+            color: yellow;
+        }
+
+        .box:nth-last-child(1){
+            color: pink;
+        }
+
+        .boxes::before{
+            content: 'this is nambi';
+            color: green;
+        }
+
+        .boxes::after{
+            content: 'he is frontend developer';
+            color: orangered;
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        input::placeholder{
+            color:blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div  class="box">This is Box 1</div>
+        <div data-color="primary" class="box">Hey, this is another box</div>
+        <div class="box">Again one more box</div>
+        <input type="text" placeholder="enter name">
+    </div>
+</body>
+</html>
