@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 4 - Nav Bar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            --primary-color: rgb(158, 224, 195);
+            --secondary-color: rgb(186, 213, 184);
+        }
+        nav{
+            height: 110px;
+            background-color: var(--primary-color);
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 40px;
+        }
+        li:hover{
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Logo</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+</body>
+</html>
