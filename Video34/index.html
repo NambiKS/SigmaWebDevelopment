@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear in CSS</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .cards{
+            border: 2px solid blue;
+        }
+        .card{
+            border: 2px solid red;
+            display: flow-root;
+            /* overflow: auto; */
+        }
+        img{
+            float: left;     
+        }
+        .card:nth-child(3){
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+            <img width="230" src="https://c0.wallpaperflare.com/preview/537/1018/511/man-riding-fishing-boat-on-body-of-water.jpg" alt="man with boat">
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis alias dignissimos exercitationem odit quia fuga cumque, atque numquam culpa natus quos accusamus, modi laboriosam soluta consectetur unde possimus enim? Possimus fugit fuga reiciendis veniam tenetur non, impedit ducimus soluta, vel vero laboriosam excepturi consequatur.
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque alias consectetur, cum nostrum minima, cupiditate exercitationem, dolores quaerat incidunt vel dolorum at quibusdam? Fugit quas quod asperiores. Incidunt cum, officia facere sequi quo nostrum dolorem eos minima a vel sit quia reiciendis cumque molestias? Nisi tempore vel nobis asperiores est totam perferendis nulla fugit placeat! Magnam tempore alias perferendis laudantium? Similique rem sint voluptatum qui facilis?</div>
+    </div>
+</body>
+</html>
