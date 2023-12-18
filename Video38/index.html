@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            flex-flow: row wrap;
+            gap: 30px;
+            row-gap: 0;
+            column-gap: 30px;
+        }
+        .item{
+            height: 92px;
+            width: 92px;
+            border: 2px solid red;
+            margin: 5px;
+            background-color: yellow;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order: 3;
+        }
+
+        /* 
+        display:flex - give this to parent cotainer
+
+        justify-content : center - will center the element based on the flex direction,
+        by defauult it will be row but if we change to column, then as per the main axis(flex-direction value), elements will be centered
+        justify-content : flex-end, flex-start
+        justify-content: space-around - will devide the space and keep that in between 
+
+        flex-direction: row, row-reverse, column, column-reverse;
+
+        flex-wrap: wrap; - wrap the elements 
+        flex-wrap: wrap-reverse; - wrap the elements reversely from the bottom
+        flex-wrap: nowrap; - nowrap the elements
+
+        align-items : center - will center the element vertically - if we have single line of items then mostly we use
+        align-content: center; - it will remove extra space between two lines of items and make it centered - if we have multiple lines of items and we have used wraps then this will be used
+
+        flex-flow: flex-direction flex-wrap; - set two values at the same time
+
+        gap - gives spaces between items horizontally and vertically   
+        row-gap - gives space between rows
+        column-gap - gives gap between columns;
+        gap : 10px 50px - gap for rows and columns 
+
+        all these above property has to be set to container
+
+
+        ===========================================================
+
+        now, below properties are for items inside the flex - container
+
+        order:1 - we can set orders of items in flex container
+        default ordr will be zero all the time for all the items
+
+        flex-grow: 1 
+        default is 0
+
+        flex-shrink: 2
+        it will shrink dounly when size id shrinked like in mobile device or any small devices
+
+        align self - flex start , flex end
+
+
+        */
+
+    </style>    
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-2">4</div>
+            <div class="item order-1">5</div>
+            <div class="item"></div>
+       
+        </div>
+    </main>
+</body>
+</html>
